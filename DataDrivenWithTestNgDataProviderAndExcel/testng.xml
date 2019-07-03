@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="3" parallel="methods">
+<suite name="Suite" >
 <test name="testParallel" >
+<groups>
+<run>
+<include name="strong_ties" ></include>
+<include name="bonding"></include>
+</run>
+</groups>
 <classes>
-<class name="TestApplication.TestApplication.ParallelExecutionTestng">
+<class name="TestApplication.TestApplication.GrouppingTestNg"  >
 </class>
 </classes>
 </test>

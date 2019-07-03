@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <test thread-count="4" name="testParallel(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="testParallel(failed)">
+    <groups>
+      <run>
+        <include name="bonding"/>
+      </run>
+    </groups>
     <classes>
-      <class name="TestApplication.TestApplication.ParallelExecutionTestng">
+      <class name="TestApplication.TestApplication.GrouppingTestNg$TC_Class1">
         <methods>
-          <include name="executeSessionTwo"/>
-          <include name="executSessionOne"/>
-          <include name="executSessionThree"/>
+          <include name="tc02VerifyLaunchPage"/>
         </methods>
-      </class> <!-- TestApplication.TestApplication.ParallelExecutionTestng -->
+      </class> <!-- TestApplication.TestApplication.GrouppingTestNg$TC_Class1 -->
     </classes>
   </test> <!-- testParallel(failed) -->
 </suite> <!-- Failed suite [Suite] -->
