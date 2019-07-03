@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestApplication.TestApplication.DataProviderWithExcel_002">
+      <class name="TestApplication.TestApplication.TestNgParameterization">
         <methods>
           <include name="Registration_data"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="OpenBrowser"/>
         </methods>
-      </class> <!-- TestApplication.TestApplication.DataProviderWithExcel_002 -->
+      </class> <!-- TestApplication.TestApplication.TestNgParameterization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
